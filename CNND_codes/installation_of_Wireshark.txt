@@ -1,0 +1,14 @@
+Aim: To install and configure Wireshark Network Analyzer.
+
+1. Open Terminal in Ubuntu. Type following commands one by one to install Wireshark
+and other dependencies.
+a. sudo apt-get update
+b. sudo apt-get upgrade
+c. sudo add-apt-repository ppa:wireshark-dev/stable
+d. sudo apt update
+e. sudo apt install wireshark
+2. To check if Wireshark is installed properly or not, type following command in
+Terminal
+$ sudo wireshark
+It will display “The Wireshark Network Analyzer” window. After opening Wireshark
+if you can see wavy lines beside ‘ens33, then Wireshark is installed properly.

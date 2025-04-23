@@ -1,0 +1,60 @@
+Aim: To perform basic networking commands in windows command prompt and understand
+their functions.
+
+Commands://Type each command in cmd //
+///////////////////////////////
+ hostname
+ ping 192.168.10.1
+ ping 192.168.0.1
+ ping www.google.in
+ ping www.google.in -t
+ ping www.google.in -n 6
+ ping www.google.in -r 8
+ ping www.google.in -l 100
+ ipconfig
+ ipconfig -all
+ netstat -r
+ tracert 192.168.10.1
+ tracert 192.168.0.1
+ tracert www.google.in
+ nslookup www.google.in
+ route print
+ arp -a
+
+////////////////////////////////
+1.hostname
+• It will provide the name of your computer. The first part of the result is the name of a
+computer and the second part is the name of the domain.
+
+2. ping
+• Ping is used to testing a network host capacity to interact with another host.
+• This is performed by using the Internet Control Message Protocol, which allows the
+echo packet to be sent to the destination host and a listening mechanism.
+
+3. ipconfig
+• The command IP config will display basic details about the device’s IP address
+configuration.
+
+4.netstat
+• The netstat provides the statistics and information in the use of the current TCP-IP
+Connection network about the protocol.
+
+5. tracert
+• The trace route (tracert) command is a Command Prompt command which is used to
+get the network packet being sent and received and the number of hops required for that
+packet to reach to target.
+
+6. nslookup
+• The nslookup, which stands for name server lookup command, is a network utility
+command used to obtain information about internet servers.
+
+7. route
+• In IP networks, routing tables are used to direct packets from one subnet to another.
+• The Route command provides the device’s routing tables. To get this result, just type
+route print.
+
+8. arp
+• ARP stands for Address Resolution Protocol. Although network communications can
+readily be thought of as an IP address, the packet delivery depends ultimately on the
+media access control (MAC). This is where the protocol for address resolution comes
+into effect.

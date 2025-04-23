@@ -1,0 +1,71 @@
+Aim: To install and configure NS2 and write a program to display, “Hello world”.
+
+
+1. Open Terminal in windows Type following commands one by one to install NS2,
+Network Animator and other dependencies.
+
+a. sudo apt-get update
+b. sudo apt-get upgrade
+c. sudo apt-get install ns2
+d. sudo apt-get install nam
+e. sudo snap install openjdk
+f. sudo apt install tclsh
+g. sudo apt-get update
+h. sudo apt-get upgrade
+
+2. To install ‘xgraph’:
+
+a. Download file ‘xgraph_4.38_linux64.tar.gz’.(jaha file download hua he us file se terminal open karo fir vo tar wala command dalo)
+
+b. In terminal change the directory where ‘xgraph_4.38_linux64.tar.gz’ file is
+downloaded and type following command in Terminal
+
+$ tar xvfz xgraph_4.38_linux64.tar.gz
+
+c. The executable is under the ‘bin’ directory, called ‘xgraph’.
+d. In terminal change the directory to ‘bin’ and type following command in
+Terminal
+$ ./xgraph (xgraph ke bin ke folder me jake ye command dalo)
+It will open xgraph window.
+
+3. To check if NS2 is installed properly or not, type following command in Terminal
+
+$ ns
+If you get the ‘%’ sign (NS2 prompt) in terminal, it indicates that NS2 is installed
+properly. Else, install the missing dependencies depending on the error message. Use
+‘exit’ command to break out of NS2 prompt.
+
+4. To check if Network Animator is installed properly or not, type following command
+in Terminal
+$ nam
+
+or
+$ which nam("it will give a directory if it exits")
+
+It will open Network Animator window indicating that Network Animator is installed
+properly. Else, perform following steps:
+a. Download the file ‘nam_1.14_amd64.deb’.
+b. In terminal change the directory where ‘nam_1.14_amd64.deb’ file is
+downloaded and type following command in Terminal
+$ sudo dpkg --install nam_1.14_amd64.deb
+c. Check if Network Animator window opens or not.
+
+5. Create on file name ‘Prog1.tcl’ and type in program to display “Hello world”.
+Program:
+///////////////////////
+set ns [new Simulator]
+$ns at 1 "puts \"Hello World\""
+$ns at 1.5 "exit"
+$ns run
+////////////////////
+(save file as )
+nano pro1.tcl
+(to run)
+ns pro1.tcl
+
+6. Change Directory where ‘Prog1.tcl’ file is saved and type following command in
+Terminal to execute the program
+$ ns Prog1.tcl
+
+7. Observe the output and save the same.
+
